@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!--Metadatos-->
+  <meta charset="utf-8">
+  <meta name="author" content="Carlos Merina">
+  <meta name="description" content="Portfolio de desarroyo web">
+  <meta name="keywords" content="HTML, CSS, JavaScript, React">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Titel-->
+  <title>Carlos Merina | Desarrollo web Front-End</title>
+
+  <!--Favicon-->
+  <link rel="icon" type="image/x-icon" href="src/img/icono-carabela3.png">
+
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+  <!-- iconos bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Pirata+One&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <!--Barra de navegacion-->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="src/img/icono-carabela1.png" width="50" alt="logo carabela">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#articulos">Articulos/cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#juegos">Juegos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Seccion hero-->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+
+      <div class="contenedor-con-gif">
+        <img class="gif-matrix" src="src/img/gif-2.gif" alt="Fondo animado">
+        <img class="hero-imagen-carabela" src="src/img/icono-carabela1.png" alt="Logotipo principal">
+      </div>
+
+      <h1>Hola, Soy Carlos Merina</h1>
+      <h2>Desarrollador back-end y aprendiendo con este ejemplo un poco del front-end usando Bootstrap.</h2>
+    </div>
+
+    <div class="hero-inferior">
+      <img class="hero-inferior-imagen img-fluid" src="src/img/svg/hero-inferior.svg" alt="Monitor y logos">
+    </div>
+  </section>
+
+  <!-- sobre mi -->
+  <section id="sobre-mi" class="sobre-mi seccion-oscura">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">Conoces a Carlos?</h2>
+      <p class="seccion-texto">
+        Soy técnico en desarrollo de aplicaciones multiplataforma 💻 con una sólida experiencia en Java y SQL.<br>
+        Apasionado por el desarrollo back-end y en constante búsqueda de nuevos retos.<br>
+        Actualmente, soy estudiante en la bootcamp
+        de la It-Academy de Barcelona. Estoy ampliando mis conocimientos en tecnologías front-end como HTML5, CSS, JavaScript y React
+        para convertirme o acercarme un poco más a un perfil de desarrollador full stack.<br>
+        Estoy curioseando nuevos lenguajes de programación como GoLan, y ampliando también conocimientos en el mundo Android.
+        Y ahora me ronda mucho por la cabeza PHP...😝<br>
+        Me gusta aprender, resolver problemas y trabajar en proyectos que me permitan
+        crecer tanto personal como profesionalmente.<br>
+        Actualmente, estoy centrado en el tema de API y Spring Boot.</p>
+    </div>
+  </section>
+
+  <!-- experiencia -->
+  <section class="experiencia seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+        <!-- desarrollo web -->
+        <div class="columna col-12 col-md-6">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo seccion-titulo">Desarrollo</p>
+          <p>Lenguajes  y herramientas que domino o que estoy consolidadndo.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">JAVA</span>
+            <span class="badge text-bg-primary">SQL</span>
+            <span class="badge text-bg-primary">HTML</span>
+            <span class="badge text-bg-primary">CSS</span>
+            <span class="badge text-bg-primary">JavaScript</span>
+            <span class="badge text-bg-primary">Bootstrap</span>
+            <span class="badge text-bg-primary">GitHub</span>
+            <span class="badge text-bg-primary">Git</span>
+          </div>
+        </div>
+        <!-- Multimedia -->
+        <div class="columna col-12 col-md-6">
+          <i class="bi bi-youtube"></i>
+          <p class="experiencia-titulo seccion-titulo">Multimedia</p>
+          <p>Plataformas con las que trabajo a titulo personal.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">YouTube</span>
+            <span class="badge text-bg-primary">twitch</span>
+            <span class="badge text-bg-primary">Discord</span>
+            <span class="badge text-bg-primary">GitHub</span>
+          </div>
+        </div>
+        <div class="columna col-12 col-md-6">
+          <i class="bi bi-rss"></i>
+          <p class="experiencia-titulo seccion-titulo">Redes</p>
+          <p>Mis redes sociales.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">LinkedIn</span>
+            <span class="badge text-bg-primary">Insta</span>
+            <span class="badge text-bg-primary">Facebook</span>
+            <span class="badge text-bg-primary">twitter-X</span>
+            <span class="badge text-bg-primary">Email</span>
+          </div>
+        </div>
+        <!-- Estudios -->
+        <div class="columna col-12 col-md-6">
+          <i class="bi bi-book"></i>
+          <p class="experiencia-titulo seccion-titulo">Estudios</p>
+          <p>Que he estudiado Y en que organizaciones estoy involucrado.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">FP GS DAM</span>
+            <span class="badge text-bg-primary">It-Academy</span>
+            <span class="badge text-bg-primary">Cibernarium</span>
+            <span class="badge text-bg-primary">FreeCodeCamp</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- proyectos -->
+  <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+    <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+    <h3 class="seccion-descripcion">Estos son algunos de mis proyectos recientes</h3>
+    <!-- galeria de proyectos -->
+    <div class="container text-center proyectos-contenedor">
+      <div class="row">
+        <!-- proyecto 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="src/img/img-proyectos/proyecto1.png" alt="proyecto 1">
+            <div class="overlay">
+              <p>Readme GitHub</p>
+              <div class="iconos-contenedor"> <!--d-flex-->
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/CarlosMC87/CarlosMC87" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="http://freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- proyecto 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="src/img/img-proyectos/proyecto2.png" alt="proyecto 2">
+            <div class="overlay">
+              <p>Proyecto Portfolio</p>
+              <div class="iconos-contenedor">
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/CarlosMC87/CarlosMC87" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="http://freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- proyecto 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="src/img/img-proyectos/proyecto3.png" alt="proyecto 3">
+            <div class="overlay">
+              <p>Coming soon 3</p>
+              <div class="iconos-contenedor">
+                <div class="iconos-contenedor">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github text-muted"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop text-muted"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- proyecto 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="src/img/img-proyectos/proyecto4.png" alt="proyecto 4">
+            <div class="overlay">
+              <p>Coming soon 4</p>
+              <div class="iconos-contenedor">
+                <div class="iconos-contenedor">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github text-muted"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop text-muted"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- proyecto 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="src/img/img-proyectos/proyecto5.png" alt="proyecto 5">
+            <div class="overlay">
+              <p>Coming soon 5</p>
+              <div class="iconos-contenedor">
+                <div class="iconos-contenedor">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github text-muted"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop text-muted"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- proyecto 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="src/img/img-proyectos/proyecto6.png" alt="proyecto 6">
+            <div class="overlay">
+              <p>Coming soon 6</p>
+              <div class="iconos-contenedor">
+                <div class="iconos-contenedor">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github text-muted"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop text-muted"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- boton proyectos -->
+    <div>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Futuros proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </div>
+  </section>
+
+  <!-- Articulos y cursos -->
+  <section id="articulos" class="articulos justify-content-start">
+    <h2 class="seccion-titulo texto-negro">Interesantes articulo y cursos de YouTube</h2>
+    <div class="card">
+      <div class="card-header">
+        Más recientes
+      </div>
+      <div class="row p-3 g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="https://www.youtube.com/watch?v=U709qY6S9rA&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk" target="_blank"
+            rel="noopener noreferrer" class="card-grid-item d-block text-center text-decoration-none">
+            <img src="https://img.youtube.com/vi/U709qY6S9rA/hqdefault.jpg" alt="Tutorial JAVA"
+              class="img-fluid rounded">
+            <p class="mt-2 fw-semibold text-dark">Tutorial JAVA</p>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="https://www.youtube.com/watch?v=DFg1V-rO6Pg" target="_blank" rel="noopener noreferrer"
+            class="card-grid-item d-block text-center text-decoration-none">
+            <img src="https://img.youtube.com/vi/DFg1V-rO6Pg/hqdefault.jpg" alt="Tutorial SQL"
+              class="img-fluid rounded">
+            <p class="mt-2 fw-semibold text-dark">Tutorial SQL</p>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="https://www.youtube.com/watch?v=XqFR2lqBYPs&list=PL4ONm-ifcbQJNAzWesbl498Gof2ystb9A" target="_blank"
+            rel="noopener noreferrer" class="card-grid-item d-block text-center text-decoration-none">
+            <img src="https://img.youtube.com/vi/XqFR2lqBYPs/hqdefault.jpg" alt="Tutorial HTML y CSS"
+              class="img-fluid rounded">
+            <p class="mt-2 fw-semibold text-dark">Tutorial HTML y CSS</p>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="https://www.youtube.com/watch?v=QCw0L6FupQ0&t=38s" target="_blank" rel="noopener noreferrer"
+            class="card-grid-item d-block text-center text-decoration-none">
+            <img src="https://img.youtube.com/vi/QCw0L6FupQ0/hqdefault.jpg" alt="Tutorial bootstrap"
+              class="img-fluid rounded">
+            <p class="mt-2 fw-semibold text-dark">Tutorial bootstrap</p>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="https://www.youtube.com/watch?v=EdWuxZVBEMA" target="_blank" rel="noopener noreferrer"
+            class="card-grid-item d-block text-center text-decoration-none">
+            <img src="https://img.youtube.com/vi/EdWuxZVBEMA/hqdefault.jpg" alt="Tutorial JavaScript"
+              class="img-fluid rounded">
+            <p class="mt-2 fw-semibold text-dark">Tutorial JavaScript</p>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="https://www.youtube.com/watch?v=6Jfk8ic3KVk" target="_blank" rel="noopener noreferrer"
+            class="card-grid-item d-block text-center text-decoration-none">
+            <img src="https://img.youtube.com/vi/6Jfk8ic3KVk/hqdefault.jpg" alt="Tutorial React"
+              class="img-fluid rounded">
+            <p class="mt-2 fw-semibold text-dark">Tutorial React</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="https://freecodecamp.org/espanol/news/" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-dark mt-3">
+        Ver más Articulos
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+    </a>
+  </section>
+
+  <!-- <section id="articulos" class="articulos justify-content-start">
+    <h2 class="seccion-titulo texto-negro">Interesantes articulo y cursos de youTube</h2>
+    <div class="card">
+      <div class="card-header">
+        Mas recientes
+      </div>
+      <ul class="list-group list-group-flush">
+        <a href="https://www.youtube.com/watch?v=U709qY6S9rA&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk" target="_blank"
+          rel="noopener noreferrer">
+          <li class="list-group-item">
+            Tutorial JAVA
+          </li>
+        </a>
+        <a href="https://www.youtube.com/watch?v=DFg1V-rO6Pg" target="_blank"
+          rel="noopener noreferrer">
+          <li class="list-group-item">
+            Tutorial SQL
+          </li>
+        </a>
+        <a href="https://www.youtube.com/watch?v=XqFR2lqBYPs&list=PL4ONm-ifcbQJNAzWesbl498Gof2ystb9A" target="_blank"
+          rel="noopener noreferrer">
+          <li class="list-group-item">
+            Tutorial HTML y CSS
+          </li>
+        </a>
+        <a href="https://www.youtube.com/watch?v=QCw0L6FupQ0&t=38s" target="_blank"
+          rel="noopener noreferrer">
+          <li class="list-group-item">
+            Tutorial bootstrap
+          </li>
+        </a>
+        <a href="https://www.youtube.com/watch?v=ivdTnPl1ND0" target="_blank"
+          rel="noopener noreferrer">
+          <li class="list-group-item">
+            Tutorial JavaScript
+          </li>
+        </a>
+        <a href="https://www.youtube.com/watch?v=6Jfk8ic3KVk" target="_blank"
+          rel="noopener noreferrer">
+          <li class="list-group-item">
+            Tutorial React
+          </li>
+        </a>
+      </ul>
+    </div>
+    <a href="https://freecodecamp.org/espanol/news/" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-dark">
+        Ver más Articulos
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+    </a>    
+  </section> -->
+
+  <!-- videojuegos Testimonios -->
+  <section id="juegos" class="testimonios seccion-clara">
+    <h2 class="seccion-titulo">Videojuegos</h2>
+    <h3 class="seccion-descripcion">Estos son algunos de mis juegos favoritos...,</h3>
+    <h3 class="seccion-descripcion">hasta el momento!</h3>
+
+    <!-- carrusel -->
+    <div id="testimonios-carrusel" class="carousel carousel-dark slide">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="carousel-item-bg">
+            <a href="https://store.steampowered.com/app/418030/Subsistence/?l=spanish" target="_blank" rel="noopener noreferrer">
+              <img src="src/img/img-juegos-iconos/subsistence.jpg" class="fondo-carousel" alt="Subsistence">
+            </a>
+          </div>
+          <div class="container contenido-carousel">
+            <img class="testimonio-imagen rounded-circle" src="src/img/img-juegos-iconos/hacha.png"
+              alt="Logo de Subsistence">
+            <p class="testimonio-texto">
+              Subsistence es un sandbox PvE de mundo abierto en primera persona. Juega solo o en co-op.
+              Lidia con las estaciones del año, construye una base, desarrolla tecnología y prepárate contra un ambiente hostil.
+              Defiéndete de la naturaleza y los cazadores (IA) que también construyen bases en el mundo.
+            </p>
+            <div class="testimonio-info">
+              <p class="cliente">Subsistence</p>
+              <p class="cargo">Survivol Multiplayer Mundo abierto</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="carousel-item">
+          <div class="carousel-item-bg">
+            <a href="https://greenhell-game.com/" target="_blank" rel="noopener noreferrer">
+              <img src="src/img/img-juegos-iconos/green-hell.jpg" class="fondo-carousel" alt="Green Hell">
+            </a>
+          </div>
+          <div class="container contenido-carousel">
+            <img class="testimonio-imagen rounded-circle" src="src/img/img-juegos-iconos/arco.png"
+              alt="Logo de Green Hell">
+            <p class="testimonio-texto">
+              La selva amazónica es exotómicamente impresionante, multicolor, llena de tonos y sonidos, pero también mortal, 
+              intransigente para los ignorantes. Trate de sobrevivir en este entorno que cambia dinámicamente. 
+              Experimente la riqueza de las plantas y multitud de especies animales (mamíferos, reptiles, aves e insectos). 
+              Sus acciones, su presencia y cambios ambientales tendrán el impacto en el ecosistema. 
+              Espere un comportamiento y la ocurrencia totalmente realistas de los animales.
+            </p>
+            <div class="testimonio-info">
+              <p class="cliente">Gren Hell</p>
+              <p class="cargo">Survivol en primera persona</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-item-bg">
+            <a href="https://www.callofduty.com/es" target="_blank" rel="noopener noreferrer">
+              <img src="src/img/img-juegos-iconos/cod-6.jpg" class="fondo-carousel" alt="Call of Duty Black Ops 6">
+            </a>
+          </div>
+          <div class="container contenido-carousel">
+            <img class="testimonio-imagen rounded-circle" src="src/img/img-juegos-iconos/subfusil.png"
+              alt="Logo de Call of Duty">
+            <p class="testimonio-texto">
+              Corre el año 2035 y el mundo está al borde del caos, devastado por violentos conflictos y la guerra psicológica producto 
+              de los sucesos de los populares Black Ops 2 y Black Ops 6. Armado con la tecnología más puntera, el equipo de Black Ops 
+              liderado por David Mason tendrá que luchar contra un enemigo manipulador que usa el miedo como arma.
+            </p>
+            <div class="testimonio-info">
+              <p class="cliente">Call of Duty Black Cops 6</p>
+              <p class="cargo">Shoter en primera persona</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-item-bg">
+            <a href="https://www.farming-simulator.com/index.php" target="_blank" rel="noopener noreferrer">
+              <img src="src/img/img-juegos-iconos/farming-simulator-25.jpg" class="fondo-carousel" alt="Farming Simulator 25">
+            </a>
+          </div>
+          <div class="container contenido-carousel">
+            <img class="testimonio-imagen rounded-circle" src="src/img/img-juegos-iconos/jhon-deer.png"
+              alt="Logo de Farming Simulator 25">
+            <p class="testimonio-texto">
+              The farming Simulator 25 invita a unirte a la gratificante vida en la granja.<br>
+              Ya sea que construyas tu legado por sí solo o coopere en multijugador.<br> 
+              Usted decide: Esta granja es tu granja.
+            </p>
+            <div class="testimonio-info">
+              <p class="cliente">Farming Simulator 25</p>
+              <p class="cargo">Simulador de agricultura</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-item-bg">
+            <a href="https://www.hogwartslegacy.com/es-es" target="_blank" rel="noopener noreferrer">
+              <img src="src/img/img-juegos-iconos/hogwarts.jpg" class="fondo-carousel" alt="Hogwarts Legacy">
+            </a>            
+          </div>
+          <div class="container contenido-carousel">
+            <img class="testimonio-imagen rounded-circle" src="src/img/img-juegos-iconos/hogwarts-legacy-ravenclaw.png"
+              alt="Logo de Hogwarts-legacy-ravenclaw">
+            <p class="testimonio-texto">
+              Hogwarts Legacy es un juego de rol inmersivo en mundo abierto que se inspira de los libros de la saga Harry Potter. 
+              Disfruta del Hogwarts del siglo XIX. Tu personaje es un alumno o alumna del famoso colegio que tiene la clave de un 
+              antiguo secreto que amenaza con destruir el mundo mágico. Ahora puedes tomar el control de la acción y ser el centro de 
+              tu propia aventura en el mundo mágico. El legado está en tus manos.
+            </p>
+            <div class="testimonio-info">
+              <p class="cliente">Hogwarts Legacy</p>
+              <p class="cargo">Mundo de Harry Potter</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto"> <!--seccion-oscura-->
+    <div class="container">
+      <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 seccion-titulo">
+            Hablemos
+          </div>
+          <div class="col-12 col-md-4 descripcion">
+            Contactame para hacer tus proyectos realidad.
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="mailto:c.merina.bcn@gmail.com">
+              <button type="button">
+                Contacto
+                <i class="bi bi-envelope-arrow-up-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de pagina (footter) -->
+
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-logo" src="src/img/img-juegos-iconos/icono-carabela3.png" alt="logo del portafolio">
+    <p class="footer-texto text-center">
+      Aprendo y creo todos los dias. <br>
+    </p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+
+      <!-- <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter-x"></i>
+      </a>
+
+      <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a> -->
+
+      <a href="http://www.youtube.com/@BlackWest87" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-youtube"></i>
+      </a>
+
+      <a href="https://discord.com/users/272421156424777728" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-discord"></i>
+      </a>
+
+      <a href="http://www.linkedin.com/in/carlosmerina" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+
+      <a href="http://www.github.com/CarlosMC87" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+
+      <a href="https://www.twitch.tv/blackwest87" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitch"></i>
+      </a>
+
+      <a href="https://open.spotify.com/playlist/6GJ5acIHuLmFEhSPVHX0I7?si=R0AfJVU6TiyZOP1_MIpZwg" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-spotify"></i>
+      </a>
+
+      <a href="mailto:c.merina@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+
+    </div>
+    <div class="derechos-de-autor">
+      <p class="footer-texto text-center">
+        <small>Propiedad de <a href="https://github.com/CarlosMC87" target="_blank" rel="noopener noreferrer">Carlos Merina Cirera</a> 2025 &reg;.
+        </small>
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

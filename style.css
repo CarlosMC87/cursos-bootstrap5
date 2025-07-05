@@ -1,3 +1,22 @@
+/* Variables de color para modo claro y oscuro */
+:root {
+  --color-bg: #fff;
+  --color-bg-sec: #1b1b32;
+  --color-text: #222;
+  --color-text-sec: #584e4e;
+  --color-navbar: #c4c5c6;
+  --color-card: #fff;
+}
+
+body.dark-mode {
+  --color-bg: #222224;
+  --color-bg-sec: #23233a;
+  --color-text: #f1f1f1;
+  --color-text-sec: #f1f1f1;
+  --color-navbar: #323235;
+  --color-card: #23233a;
+}
+
 /*Barra de navegacion*/
 
 .navbar {
@@ -5,7 +24,7 @@
     padding-bottom: 0.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    background-color: #c4c5c6;
+    background-color: var(--color-navbar);
 }
 
 .navbar-collapse {
@@ -17,6 +36,8 @@
 /*Estilos generales*/
 body {
     padding-top: 70px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
 section {
@@ -35,13 +56,13 @@ h1 {
 }
 
 .seccion-oscura {
-    background-color: #1b1b32;
-    color: white;
+    background-color: var(--color-navbar);
+    color: var(--color-text);
 }
 
 .seccion-clara {
-    color: black;
-    background-color: white;
+    color: var(--color-text);
+    background-color: var(--color-bg-sec);
 }
 
 .seccion-titulo {
@@ -54,11 +75,12 @@ h1 {
 
 .seccion-descripcion {
     font-size: 1.2rem;
-    color: #584e4e;
+    color: var(--color-text-sec);
 }
 
 .seccion-texto {
     font-size: 1.2rem;
+    color: var(--color-text);
 }
 
 .btn-info {
@@ -93,6 +115,14 @@ h1 {
     height: 400px;
     border-radius: 50%;
     margin: 20px;
+}
+
+.imagen-perfil {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin: 20px;
+    z-index: 2;
 }
 
 
@@ -540,4 +570,71 @@ footer {
         font-size: 18px;
 
     }
+}
+
+/* Ajuste para que la imagen inferior del hero no se superponga en móvil */
+@media (max-width: 576px) {
+    .hero-inferior-imagen {
+        max-width: 90vw;
+        height: auto;
+        margin-bottom: 1.5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero {
+        padding-bottom: 2rem;
+    }
+    .sobre-mi {
+        height: auto;
+        min-height: 350px; /* Opcional, ajusta si quieres un mínimo */
+        margin-top: 1.5rem;
+    }
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #222224 !important;
+  color: #f1f1f1 !important;
+}
+
+body.dark-mode .seccion-clara {
+  background-color: #23233a !important;
+  color: #f1f1f1 !important;
+}
+
+body.dark-mode .seccion-oscura {
+  background-color: #323235 !important;
+  color: #f1f1f1 !important;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .card,
+body.dark-mode .btn {
+  background-color: #323235 !important;
+  color: #f1f1f1 !important;
+  border-color: #444 !important;
+}
+
+body.dark-mode .seccion-clara,
+body.dark-mode .seccion-clara * {
+  color: #f1f1f1 !important;
+}
+
+body.dark-mode .seccion-oscura,
+body.dark-mode .seccion-oscura * {
+  color: #f1f1f1 !important;
+}
+
+/* Corrige textos oscuros en modo dark */
+body.dark-mode .navbar,
+body.dark-mode .navbar-nav .nav-link,
+body.dark-mode .navbar-brand,
+body.dark-mode .navbar * {
+  color: #f1f1f1 !important;
+}
+
+body.dark-mode .text-dark,
+body.dark-mode .texto-negro {
+  color: #f1f1f1 !important;
 }

@@ -2,166 +2,175 @@
 :root {
   --color-bg: #fff;
   --color-bg-sec: #1b1b32;
-  --color-text: #222;
+  --color-text: black;
   --color-text-sec: #584e4e;
   --color-navbar: #c4c5c6;
+  --color-navbar-text: #222; /* Color para el texto de la navbar en modo claro */
   --color-card: #fff;
 }
 
 body.dark-mode {
   --color-bg: #222224;
   --color-bg-sec: #23233a;
-  --color-text: #f1f1f1;
+  --color-text: white;
   --color-text-sec: #f1f1f1;
   --color-navbar: #323235;
+  --color-navbar-text: #f1f1f1; /* Color para el texto de la navbar en modo oscuro */
   --color-card: #23233a;
 }
 
 /*Barra de navegacion*/
 
 .navbar {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    background-color: var(--color-navbar);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: var(--color-navbar);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: var(--color-navbar-text);
+}
+
+.navbar .nav-link:hover {
+  color: var(--color-navbar-text);
+  opacity: 0.8;
 }
 
 .navbar-collapse {
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
-
 
 /*Estilos generales*/
 body {
-    padding-top: 70px;
-    background-color: var(--color-bg);
-    color: var(--color-text);
+  padding-top: 70px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    scroll-margin-top: 60px; /* o ajusta según el alto del navbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-margin-top: 60px; /* o ajusta según el alto del navbar */
 }
 
 h1 {
-    font-size: 2.5rem; /*En proporcion al elemento raiz*/
-    font-family: "Pirata One", system-ui;
-    font-weight: 400;
-    font-style: normal;
+  font-size: 2.5rem; /*En proporcion al elemento raiz*/
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .seccion-oscura {
-    background-color: var(--color-navbar);
-    color: var(--color-text);
+  background-color: var(--color-navbar);
+  color: var(--color-text);
 }
 
 .seccion-clara {
-    color: var(--color-text);
-    background-color: var(--color-bg-sec);
+  color: var(--color-text);
+  background-color: var(--color-bg-sec);
 }
 
 .seccion-titulo {
-    font-size: 2rem;
-    padding: 15px 0;
-    font-family: "Pirata One", system-ui;
-    font-weight: 400;
-    font-style: normal;
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .seccion-descripcion {
-    font-size: 1.2rem;
-    color: var(--color-text-sec);
+  font-size: 1.2rem;
+  color: var(--color-text-sec);
 }
 
 .seccion-texto {
-    font-size: 1.2rem;
-    color: var(--color-text);
+  font-size: 1.2rem;
+  color: var(--color-text);
 }
 
 .btn-info {
-    font-size: 1.1rem;
-    margin: 20px;
-    /* font-weight: bold; */
+  font-size: 1.1rem;
+  margin: 20px;
+  /* font-weight: bold; */
 }
 
 .texto-negro {
-    color: black;
-
+  color: var(--color-text);
 }
 
 .texto-blanco {
-    color: white;
+  color: white;
 }
 
 /*Seccion Hero*/
 
 .hero {
-    background-color: #f5f6f7;
-    min-height: 450px;
-    text-align: center;
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
 }
 
 .hero-principal {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .hero-imagen-carabela {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    margin: 20px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin: 20px;
 }
 
 .imagen-perfil {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    margin: 20px;
-    z-index: 2;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin: 20px;
+  z-index: 2;
 }
 
-
 .hero-principal h2 {
-    font-size: 1.4rem;
-    color: #615151;
+  font-size: 1.4rem;
+  color: #615151;
 }
 
 /* sobre mi */
 
 .sobre-mi {
-    height: 500px;
-    padding: 10px;
+  height: 500px;
+  padding: 10px;
 }
 
 .sobre-mi .contenedor {
-    max-width: 600px;
-    text-align: center;
+  max-width: 1000px;        /*Texto descriptivo*/
+  text-align: center;
 }
 
 /* experiencia */
 
 .experiencia {
-    padding: 40px;
+  padding: 40px;
 }
 
 .experiencia .columna {
-    padding: 20px;
-    border: 2px solid #8080804d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    transition: all 0.2s ease-in;
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
 }
 
 .experiencia .columna:hover {
-    color: white;
-    background-color: #1b1b32;
+  color: white;
+  background-color: #1b1b32;
 }
 
 /* .experiencia .row div {
@@ -171,425 +180,418 @@ h1 {
 } */
 
 .experiencia i {
-    font-size: 2.5rem;
-    color: #7ade30;
-    background-color: #0a0a23;
-    padding: 8px 19px;
-    border-radius: 50%;
+  font-size: 2.5rem;
+  color: #7ade30;
+  background-color: #0a0a23;
+  padding: 8px 19px;
+  border-radius: 50%;
 }
 
 .experiencia-titulo {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
 .badges-contenedor {
-    font-size: 15px;
-    font-weight: bold;
-    margin: 5px 0;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px 0;
 }
 
 .badge {
-    margin: 1px;
+  margin: 1px;
 }
 
 /* proyectos */
 
 .proyectos-recientes {
-    padding: 40px;
+  padding: 40px;
 }
 
 .proyectos-recientes img {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    display: block;
-    transition: all 0.2s ease;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
 }
 
 .proyectos-contenedor {
-    padding-top: 60px;
-    margin-bottom: 40px;
+  padding-top: 60px;
+  margin-bottom: 40px;
 }
 
 .overlay {
-    transition: all 0.2s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 80%;         /* o un ancho fijo, ejemplo: 300px */
-    max-width: 300px;   /* limita el ancho máximo */
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%; /* o un ancho fijo, ejemplo: 300px */
+  max-width: 300px; /* limita el ancho máximo */
 }
 
 .overlay p {
-    /* Cambiado de px a vw para que escale con ventana */
-    font-size: 25px;     /* antes 3vw */
-    font-weight: bold;
-    margin-bottom: 0;
+  /* Cambiado de px a vw para que escale con ventana */
+  font-size: 25px; /* antes 3vw */
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 .proyecto {
-    position: relative;
+  position: relative;
 }
 
 .proyecto:hover img {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 .proyecto:hover .overlay {
-    opacity: 1;
-
+  opacity: 1;
 }
 
 .overlay .iconos-contenedor {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .overlay i {
-    color: black;
-    /* Cambiado de px a vw para que escale con ventana */
-    font-size: 60px;    /* antes 7vw*/
-    margin: 10px;
+  color: black;
+  /* Cambiado de px a vw para que escale con ventana */
+  font-size: 60px; /* antes 7vw*/
+  margin: 10px;
 }
 
 /*Articulos targetas youtube */
 .articulos {
-    min-height: 500px;
-    padding: 30px;
+  min-height: 500px;
+  padding: 30px;
 }
 
 .articulos .card {
-    width: 80%;
-    max-width: 600px;
-    margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
 }
 
 .articulos .card-header {
-    font-weight: bold;
-    padding: 10px 15px;
+  font-weight: bold;
+  padding: 10px 15px;
 }
 
 /* Opcional: quitar borde y sombra si quieres un estilo limpio */
 .card-grid-item {
-    border: none;
-    transition: transform 0.3s ease;
+  border: none;
+  transition: transform 0.3s ease;
 }
 
 .card-grid-item:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .card-grid-item p {
-    margin: 0;
+  margin: 0;
 }
-
 
 /*Articulos */
 .articulos {
-    min-height: 500px;
-    padding: 30px;
+  min-height: 500px;
+  padding: 30px;
 }
 
 .articulos .card {
-    width: 80%;
-    max-width: 600px;
-    margin: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px;
 }
 
 .articulos .card-header {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* testimonios */
 .testimonios {
-    padding: 40px 40px 80px 40px;
+  padding: 40px 40px 80px 40px;
 }
 
 .testimonios .carousel {
-    max-width: 800px;
+  max-width: 800px;
 }
 
 .testimonio-imagen {
-    height: 100px;
-    width: 100px;
-    margin: 10px 10px 20px 10px;
+  height: 100px;
+  width: 100px;
+  margin: 10px 10px 20px 10px;
 }
 
 .testimonio-texto {
-    max-width: 70%;
-    font-size: 20px;
-    text-align: center;
-    font-family: "Exo 2", sans-serif;
-
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
 }
 
 .testimonio-info {
-    font-weight: blod;
-    text-align: center;
-    margin-top: 10px;
+  font-weight: blod;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .testimonio-info p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .testimonio-footer .cliente {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .testimonio-info .cargo {
-    font-size: 0.9rem;
-    color: #656060;
+  font-size: 0.9rem;
+  color: #656060;
 }
 
 /* Estilo principal del item del carrusel */
 .carousel-control-prev,
 .carousel-control-next {
-    /* mayor que el contenido (contenido estaba en z-index: 10) */
-    z-index: 10; 
+  /* mayor que el contenido (contenido estaba en z-index: 10) */
+  z-index: 10;
 }
 
 .carousel-item {
-    height: 500px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer; /* para que notes el hover */
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; /* para que notes el hover */
 }
 
 .carousel-item-bg img.fondo-carousel {
-    width: 100%;
-    height: 500px;
-    object-fit: contain;
-    opacity: 1;
-    transition: opacity 0.4s ease;
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  opacity: 1;
+  transition: opacity 0.4s ease;
 }
 
 .carousel-item:hover .fondo-carousel {
-    opacity: 0.15;
+  opacity: 0.15;
 }
 
 .contenido-carousel {
-    position: absolute;  /* importante para que quede encima */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;  /* por encima de la imagen */
-    opacity: 0;
-    display: flex;            /* para centrar el contenido */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.4s ease;
-    pointer-events: none;
-    padding: 20px;  /* para que no quede pegado */
-    box-sizing: border-box;
-    text-align: center;
-    color: black; /* o blanco, depende de tu diseño */
+  position: absolute; /* importante para que quede encima */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10; /* por encima de la imagen */
+  opacity: 0;
+  display: flex; /* para centrar el contenido */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  padding: 20px; /* para que no quede pegado */
+  box-sizing: border-box;
+  text-align: center;
+  color: black; /* o blanco, depende de tu diseño */
 }
 
 .carousel-item:hover .contenido-carousel {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* contacto */
 .contacto .container {
-    max-width: 1100px;
-    min-height: 200px;
-    padding: 20px;
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
 }
 
 .contacto .rectangulo {
-    margin-top: -5rem;
-    background-color: rgb(13,110,253);
-    border-radius: 10px;
-    box-shadow: 0px 1px 4px 1px white;
+  margin-top: -5rem;
+  background-color: rgb(13, 110, 253);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
 }
 
 .contacto .row {
-    width: 100%;
-    display: flex;
-    align-items: center;
-
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .contacto .descripcion {
-    color: white;
-    font-size: 1.2rem;
+  color: white;
+  font-size: 1.2rem;
 }
 
 .contacto button {
-    color: white;
-    font-weight: blod;
-    background-color: transparent;
-    border: 2px solid white;
-    padding: 1.25em 2em;
-    margin: 10px;
-    border-radius: 100px;
-    transition: all 0.2s ease-in-out;
+  color: white;
+  font-weight: blod;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
 }
 
 .contacto button:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .contacto button i {
-    color: white;
-    font-size: 1.3rem;
-    transition: all 0.2s ease-in-out;
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
 }
 
 .contacto button:hover i {
-    color: black;
+  color: black;
 }
 
 /* pie de pagina footer */
 
 footer {
-    max-height: 400px;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+  max-height: 400px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
 
 .footer-logo {
-    height: 60px;
-    width: 60px;
-    margin: 5px;
+  height: 60px;
+  width: 60px;
+  margin: 5px;
 }
 
 .footer-texto {
-    font-size: 1.5rem;
-    padding: 10px;
-    margin-bottom: 15px;
-    font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-family: "Caveat", cursive;
 }
 
 .iconos-redes-sociales a {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px;
-    margin: 5px;
-    border: 2px solid white;
-    border-radius: 50%;
-    transition: all 0.2s ease-in;  
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 5px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
 }
 
 .iconos-redes-sociales i {
-    color: white;
-    font-size: 1.5rem;
-    transition: all 0.2s ease-in;
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
 }
 
 .iconos-redes-sociales a:hover {
-    background-color: white;
-    border: 2px solid rgb(13,110,253);
-
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
 }
 
 .iconos-redes-sociales a:hover i {
-    color: black;
+  color: black;
 }
 
 .derechos-de-autor {
-    font-size: 15px;
-    padding: 5px;
+  font-size: 15px;
+  padding: 5px;
 }
 
 /* gif */
 .contenedor-con-gif {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    display: flex; /* cambio clave */
-    justify-content: center; /* centra horizontalmente */
-    align-items: center;     /* centra verticalmente */
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex; /* cambio clave */
+  justify-content: center; /* centra horizontalmente */
+  align-items: center; /* centra verticalmente */
 }
 
-
 .gif-matrix {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    z-index: 0;
-    opacity: 0.6; /* Ajusta para hacerlo más o menos visible */
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 0.6; /* Ajusta para hacerlo más o menos visible */
+  pointer-events: none;
 }
 
 .contenedor-con-gif img.hero-imagen-desarrollador {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 /* adaptable (Responsivo) */
 
-@media screen and (max-width: 400px){
-    .overlay p {
-        font-size: 14px;
-    }
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 14px;
+  }
 
-    .overlay i {
-        font-size: 20px;
-    }
+  .overlay i {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .navbar-brand {
-        display: none;
-    }
+  .navbar-brand {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 700px) {
-    .hero-inferior-imagen {
-        max-width: 700px;
-    }    
+  .hero-inferior-imagen {
+    max-width: 700px;
+  }
 }
 
 @media screen and (max-widht: 800px) {
-    .testimonio-imagen {
-        height: 120px;
-        width: 120px;
-    }
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
 
-    .testimonio-texto {
-        font-size: 18px;
-
-    }
+  .testimonio-texto {
+    font-size: 18px;
+  }
 }
 
 /* Ajuste para que la imagen inferior del hero no se superponga en móvil */
 @media (max-width: 576px) {
-    .hero-inferior-imagen {
-        max-width: 90vw;
-        height: auto;
-        margin-bottom: 1.5rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .hero {
-        padding-bottom: 2rem;
-    }
-    .sobre-mi {
-        height: auto;
-        min-height: 350px; /* Opcional, ajusta si quieres un mínimo */
-        margin-top: 1.5rem;
-    }
+  .hero-inferior-imagen {
+    max-width: 90vw;
+    height: auto;
+    margin-bottom: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero {
+    padding-bottom: 2rem;
+  }
+  .sobre-mi {
+    height: auto;
+    min-height: 350px; /* Opcional, ajusta si quieres un mínimo */
+    margin-top: 1.5rem;
+  }
 }
 
 /* Dark Mode */
@@ -637,4 +639,28 @@ body.dark-mode .navbar * {
 body.dark-mode .text-dark,
 body.dark-mode .texto-negro {
   color: #f1f1f1 !important;
+}
+
+.color-fijo-muted {
+  color: #f1f1f1 !important; /* gris Bootstrap por defecto */
+}
+
+/* Título más grande, estilo H4 como el proyecto 2 */
+.titulo-proyecto {
+  font-size: 2rem;     /* o prueba con 1.3rem */
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  color: #343a40;         /* texto oscuro similar al overlay anterior */
+}
+
+/* Iconos más grandes como los de proyecto 2 */
+.iconos-contenedor i {
+  
+  font-size: 4rem;       /* más grande y visible */
+  margin: 20px 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.iconos-contenedor i:hover {
+  transform: scale(1.2);   /* efecto sutil al pasar el ratón */
 }
